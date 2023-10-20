@@ -1,0 +1,29 @@
+.title-image {
+    width : 100vw;
+}
+.normal-image {
+    width : 50vw;
+}
+
+.bottom {
+	position: absolute;
+    bottom: unset;
+    left: 0%;
+    transform: translate(0%, -100%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0019ff;
+    font-family: 'Neue Haas Grotesk Display Pro', Sans-Serif;
+    font-weight: 500;
+    color: white;
+}
