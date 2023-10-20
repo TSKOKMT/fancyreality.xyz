@@ -1,3 +1,7 @@
+body {
+    background: #0019ff;
+}
+
 .logotype {
     width : 100vw;
 }
@@ -36,5 +40,5 @@
 }
 
 span {
-    background: red;
+    background: #0019ff;
 }
