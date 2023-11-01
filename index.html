@@ -27,4 +27,30 @@
             </h1>
         </div>
     </body>
+
+    <script>
+        var framerate = 50;
+
+        function loop() {
+            var width = document.documentElement.clientWidth;
+            var height = document.documentElement.clientHeight;
+
+            let date = new Date();
+            var time = date.getTime() / 1000;
+
+            var unit = Math.sqrt(height * width) / 120;
+
+            //Remove
+            const span = document.getElementsByTagName('span')[0];
+            if (Math.floor(time / 4) % 3 == 0) span.innerHTML = '&#129704;&#129704;&#129704;';
+            else if (Math.floor(time / 4) % 3 == 1) span.innerHTML = '&#128161;&#128161;&#128161;';
+            else span.innerHTML = '&#127768;&#127768;&#127768;';
+        }
+
+        window.setInterval(loop, 1000 / framerate);
+
+        function randomR(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+    </script>
 </html>
